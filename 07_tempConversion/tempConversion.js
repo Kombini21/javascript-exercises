@@ -1,8 +1,25 @@
-const ftoc = function() {
+const ftoc = function(x) {
 
+  let conv = (x - 32) * (5/9);
+  if (conv != 0) {
+
+  conv = (parseFloat(conv.toFixed(1))) ; 
+
+  }
+
+  return conv
 };
 
-const ctof = function() {
+const ctof = function(y) {
+
+  let conv = y * (9/5) + 32
+
+  if (conv != 0) {
+
+  conv = (parseFloat(conv.toFixed(1)));
+  }
+
+  return conv
 
 };
 
